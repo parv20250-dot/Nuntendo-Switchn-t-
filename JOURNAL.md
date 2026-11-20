@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 4 | Tier 2 | 17.81h | 6 |
+| Week 4 | Tier 2 | 10.31h | 6 |
 
 ## Contents
 
@@ -27,7 +27,7 @@
 
 **0.5h**
 
-Idky I'm doing this send help,I really really wanted to do atleast one tier 2 project soooo here I am 😬😬this will be my best shot at one so wish me luckkk
+Idky I'm doing this send help,I really really wanted to do atleast one tier 2 project soooo here I am 😬😬this will be my best shot at one so wish me luckkk 
 
 Spend some time researching my project and planning stuff out,since this is my first "bigger" project so as to say I'm kinda scared I won't finish it or that I'm biting off more than I can chew
  My first idea was a switch but wel that was too complex to diy and like way outside my skill set,so I eventually settled on a game console featuring basic games such as snake,Tetris,pong, maybeee and endless runner,
@@ -67,7 +67,7 @@ FINALLY HALF AN HOUR IN I WAS DONE WITH THE PICO-
 
 After this I added the display where I ended up slightly confused, this was because the display backlight (BLK) had to be connected to a transistor and a resistor before being connected to the display BLK (else backlight would always be on at full capacity which might consume power, the transistor allows the Pico to control the backlight thus fixing the isssue) and not connected directly BUT I named all of the labels TFT BLK, which had me confused how I would wire them I ended up making the one on the pico TFT BLK c (for control) thus fixing the issue.
 
-An hour in I was done with the display and all of the buttons, adding the buttons in was kinda satisfying because after the pico which involved some thinking and checking several data sheets, just doing pin 1 to pico and pin 2 to ground and arranging them was fun.
+An hour in I was done with the display and all of the buttons, adding the buttons in was kinda satisfying because after the pico which involved some thinking and checking several data sheets, just doing pin 1 to pico and pin 2 to ground and arranging them was fun. 
 
 ![added display and buttons](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/66c01893918543eaa22a3a6ac84a70386d745c001963bf225f6356a3d4fa84cc.png)
 
@@ -100,15 +100,15 @@ and I was done with my schematic, onto the pcb we gooooo.
 
 Okayyy, soo I tried to do the PCB all right,tried.....I questioned every life decision I have ever made which led me to this point in life while doing so. I am pretty sure I've now lost atleast 10 braincells and several several hours in this process. K so lets rewind I initially started my PCB with two requirements thas all 2:-
 a) not be too big because like I have to fit it in my case and also fit the battery, aka if the PCB is big the console is EVEN BIGGER, now this would be rather unideal cuz my screen is I believe 1.3 inches, which would look kinda goofy.
-b)  Fit all my components on it, I think this one is rather self explanatory
+b)  Fit all my components on it, I think this one is rather self explanatory 
 Seems easy enough right boi oh boi was I wrong what followed was honestly speaking a saga of chaos that I could not have anticipated. Firstly I try to just do my PCB and place the components normally, cuz I was hoping luck would be on my side and I could make it work
 
 ![attempt 1](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/2997a32974a804803c92a946f6094896f0896d2df9bfe93f57d2ab1a4ee1235f.png)
 
-Ya can see here how that went aka not well at all I could not fit all the components, the wiring looked even worse than tangled knitting yarn, soo I start over again and rearrange everything which leads me to this atrocity, it technically fit all of the components, however
+Ya can see here how that went aka not well at all I could not fit all the components, the wiring looked even worse than tangled knitting yarn, soo I start over again and rearrange everything which leads me to this atrocity, it technically fit all of the components, however 
 
 ![chaos attemp 2](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/68ea9d8f3a380c2bc16ab8d4a3dd2ae00662c9cd0147a40c98799288750f64a9.png)
-Wel- as ya can see wiring it was near impossible. After this I rearrange my components in a few ways each worse off than the last and get increasingly frustrated when I realise heyy I can flip components and have them on the back so I do that.
+Wel- as ya can see wiring it was near impossible. After this I rearrange my components in a few ways each worse off than the last and get increasingly frustrated when I realise heyy I can flip components and have them on the back so I do that. 
 
 ![1000165013](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b17b66e83dc6a836e688a459a48c2f50fa75fa472e74b26572f8297f16bdbfd4.jpg)
 
@@ -130,10 +130,10 @@ now these errors baffled me for I genuinely could not tell what they wanted me t
 
 ![1000165031](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/2f7e2611d74cd3d6b81ac186c7d9ab37617559510e3bd691d41446a9a74bda8d.jpg)
 
-These which in my opinion looked connected but who am I to decide and challenge the mighty DRC, however I could not tell what the issue was, I played around with it a bit (basically just clicked on the errors and tried to find them getting progressively more desperate) till I noticed
+These which in my opinion looked connected but who am I to decide and challenge the mighty DRC, however I could not tell what the issue was, I played around with it a bit (basically just clicked on the errors and tried to find them getting progressively more desperate) till I noticed 
 
 ![zone change](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/49097b56ef8002e5bec2f6f194f0fb14fe2a5248e6959226866e96bba27ba754.png)
-these numbers I know that clearance is a safety gap (point is a gap) and width could be adjusted, so I try that and voila
+these numbers I know that clearance is a safety gap (point is a gap) and width could be adjusted, so I try that and voila 
 
 ![1000165030](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7554fdacda0bea9b42e0cb17712f55e5e57e4632a53d0cb21bfe40f24574d657.jpg)
 
@@ -169,10 +169,10 @@ THIS TOOK ME WAY WAY WAY LONGER THAN I WOULD LIKE TO ADMIT WHEN FINALLY I SEE TH
 
 ![FINALLY](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/35ed3789b66049852b785acb045fe797761f24d267f94353063660204807b847.png)
 
-I was genuinely so excited, I had almost given up and was lowk about to the start doing something else, I'm certain I have now acquired more grey hair and lost many braincells. I was just about to wrap it up when I notice that the battery was being directly connected to the components instead of through the switched voltage (via resistors and a capacitor) which was less than ideal.....
+I was genuinely so excited, I had almost given up and was lowk about to the start doing something else, I'm certain I have now acquired more grey hair and lost many braincells. I was just about to wrap it up when I notice that the battery was being directly connected to the components instead of through the switched voltage (via resistors and a capacitor) which was less than ideal..... 
 
 ![wrong battery connection](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/e183ba26b72ac2b94fc21ca5605057118fbb1de6a9848c0368a35e9fa09ddbb3.png)
-(Battery to battery sw net on pico which was then connected to the components).
+(Battery to battery sw net on pico which was then connected to the components). 
 
 The issue my resistors were all the way across on the other side of the board
 
@@ -207,7 +207,7 @@ Okayyy so after this I started off with the case which I thought would be relati
 
 ![disappearing parameters](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/dbf2e37c3d8998f7d2d59b9e3c0240921b236bdafe088d3322ef1a67164e2936.png)
 
-which was mildly inconvenient. I had to manually export the parameters from the parent file and import them into each individual component as I soon discovered, which imo defeats their whole purpose but its still easier than digging up numbers in an extrude in the incredibly unlucky scenario that I have to change dimensions so I will take it.
+which was mildly inconvenient. I had to manually export the parameters from the parent file and import them into each individual component as I soon discovered, which imo defeats their whole purpose but its still easier than digging up numbers in an extrude in the incredibly unlucky scenario that I have to change dimensions so I will take it. 
 
 Then I make my first component (the top) and add in some button holes which was rather straightforward. The only challenge being I had to think about where stuff was on the pcb and place them accordingly cuz they have to line up. So I add buttons and some mounting holes.
 
@@ -215,23 +215,23 @@ Then I make my first component (the top) and add in some button holes which was 
 
 ![mounting holes](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/88bbf88eeab4d61a7cbab17ba9c868746138282ce9646269edf5ca3623f808f3.png)
 
-I then create a hole for the display to go through and also a small cuboidal enclosure-ish thing at the back for the display to sit, the issue is (as I note then but fix way later)- this structure appeared to be floating slightly far away from the front when viewed from some angles, however it looked fine from a side angle so I decided to let it go for now.
+I then create a hole for the display to go through and also a small cuboidal enclosure-ish thing at the back for the display to sit, the issue is (as I note then but fix way later)- this structure appeared to be floating slightly far away from the front when viewed from some angles, however it looked fine from a side angle so I decided to let it go for now. 
 
 ![no look joined](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/0e8f542212feb12aaebf46438a366276b81b10ef5b322d97b698c63f8c3b5b33.png)
 
 ![holder for screen](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5a195c57f907439c31bd51f020dd62f02f74dc79b6b28f8b729e4c2a0bdc35af.png)
 
-I try to edit it in order to fix it however I was unable to and had to figure out why (I was in assembly, I had clicked finish edit in place and therefore, had to click on edit button THE ISSUE? Fusion has a 10 file limit for editable documents which I was GENUINELY unaware of so I spend a while stumbling around the app tryna figure out why on earth I cannot edit).
+I try to edit it in order to fix it however I was unable to and had to figure out why (I was in assembly, I had clicked finish edit in place and therefore, had to click on edit button THE ISSUE? Fusion has a 10 file limit for editable documents which I was GENUINELY unaware of so I spend a while stumbling around the app tryna figure out why on earth I cannot edit). 
 
 ![do not click](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/e5c9125c53273d28a1dd62869f83c7f3c47c01215bacfca6da01a3d72d9e1111.png)
 
-After eventually figuring it out I try to fix the display holder some more then eventually decide to come back to it later and move onto the back case, in order to create the back case, I created a Project which basically made a sketch of outer edge of rim and I then extruded it. I shelled it out and started working on back part of case. NOTE- The front and back components and their alignment does not get checked properly, this becomes relevant later on.
+After eventually figuring it out I try to fix the display holder some more then eventually decide to come back to it later and move onto the back case, in order to create the back case, I created a Project which basically made a sketch of outer edge of rim and I then extruded it. I shelled it out and started working on back part of case. NOTE- The front and back components and their alignment does not get checked properly, this becomes relevant later on. 
 
 I add the mounting pins and create a counterbore so as to create screw holes and then I added holes for the speaker (drew a circle, created a pattern then extruded).
 
 ![speaker holes](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/342b41806ece682a72d1e0d8a432b87cfa5cc1123837c4b130be8ae1854e6209.png)
 
-I added holes on the top,left and right faces so as to create openings for the slide switch, charging system and the Pico's usb (while I likely won't use the Pico's power directly a backup/another option if necessary  is good).
+I added holes on the top,left and right faces so as to create openings for the slide switch, charging system and the Pico's usb (while I likely won't use the Pico's power directly a backup/another option if necessary  is good). 
 
 ![hole 1](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/45b0f7853eb777f9bed81ae094122093024280a8629de8eedd588bf4d8e60e9d.png)
 
@@ -252,7 +252,7 @@ First, I add the speaker and then the pcb(I'm not sure about the order).
 
 ![pcb no fit](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/06e8e1d19d49aa231d18bb5d9fcd82e8a6fe13aa29cc7d5eda2c0ab0d2ee6414.png)
 
-THIS GIVES ME THE FRIGHT OF MY LIFE and then I realise lengths and breadths are switched which fixes the issue.
+THIS GIVES ME THE FRIGHT OF MY LIFE and then I realise lengths and breadths are switched which fixes the issue. 
 
 ![it fit](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/96a7885c5bc60b05c78bb9f6e01cff9cb97effd252fdf1c98516fb4c9aad3d84.png)
 
@@ -264,7 +264,7 @@ I HAVE NO CLUE HOW I MISSED IT SO FAR.
 Now I have to figure out how to flip it over without changing the orientation (I do this off camera/lapse) cuz I'm embarrassed and genuinely had no clue how long it would take me to fix. I try rotate but soon discover that it is confusing and hard to get the axis right so I take a different approach and create a plane in bw the face that like goes through it vertically like
 
 ![plane](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5b3f418e197d85f5760d2bbc46fea2e5cb98a53cdd775708d259717d8bb133f8.png)
-so
+so 
 
 and then I mirror all the components (the indiv components imply that they were not joined tg properly which I fix by moving it a bit and then combining, I do this off camera too). However, I could not unlink the mirror from the original erroneous body so I just hid it and made sure TRIPLE CHECKED, while exporting that i exported the right print file. (I think its there in the STEP file but I genuinely don't know how to fix that).
 
@@ -272,18 +272,18 @@ I also added keycaps.
 
 ![interferences](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/fd5c820a02a176352fe5d817b11a3f656034bd6f1d55ee13726877c1ef02db6e.png)
 
-(most of these were caused by the mounting post and monitor holder being in wrong place and not connected to top, I move them slightly till they looked close tg from every angle and combined them and it was fine). I also had to change the radius of my rounded corners from 6 to 4 as they were in the way of my pcb causing an interference.  So i fix that too and then get
+(most of these were caused by the mounting post and monitor holder being in wrong place and not connected to top, I move them slightly till they looked close tg from every angle and combined them and it was fine). I also had to change the radius of my rounded corners from 6 to 4 as they were in the way of my pcb causing an interference.  So i fix that too and then get 
 
 ![fixed it](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/c250c2f63787a58265d676bac1c6a779c629553effc57b16d306ae4aaf4dde9a.png), which is minor enough that I believe I can fix it while assembling.
 
-SO YAY ALL THE COMPONENTS FITT (as shown by the lack of interferences).
+SO YAY ALL THE COMPONENTS FITT (as shown by the lack of interferences). 
 
-After this I just changed the material of everything checked everything a few more times (me no trust myself). Finally export the files and check everything some more (I do this off camera).
+After this I just changed the material of everything checked everything a few more times (me no trust myself). Finally export the files and check everything some more (I do this off camera). 
 
 anddd
 
 ![changed material](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/744c198070044948fbac45f762614ce8f1d6dca70c6c7d6971e5e92bc6eeefd8.png)
-This is what I finally ended my design with.
+This is what I finally ended my design with. 
 
 I actually find pcb kinda cool so minus the flipped case this was fun, organising the test components in a way that matched the PCB was a HASSLE tho), and thas all for today onto firmware we gooo.
 
@@ -299,7 +299,7 @@ tldr:- made case, flipped front had to flip it back, check if everything fit and
 
 **0.83h**
 
-K soooo slightly less optimistic update I update my BOM which was great I was in budget for once in my life...till I reach wel the screws, the screws uhhh I originally planned to have m2.5 but in the length I wanted m3 was easier to find and cheaper.
+K soooo slightly less optimistic update I update my BOM which was great I was in budget for once in my life...till I reach wel the screws, the screws uhhh I originally planned to have m2.5 but in the length I wanted m3 was easier to find and cheaper. 
 
 ![Screenshot_2026-10-31-17-04-17-20_40deb401b9ffe8e1df2f1cc5ba480b12](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b3d9de4295e34b26c14853c5e6257ec115cf1229f7b8c4010493bc8dcf81131e.jpg)
 This as you can tell is rather unideal (I searched a few other sites only to see similar stuff, trust me I wasn't enthusiastic to change my CAD again or anything, I tried everything I could think of before I reached this point in my life)
@@ -308,7 +308,7 @@ So I had to change it, now updating it for the top was fairly striaghtforward li
 
 ![new holes](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7db27f096eaab7e295a82f64ef00c09b57fa47eb8daf15b8b39ed7e4a12e5fc7.png)
 
-The issue was my whole create project shortcut for the bottom ++ how I made the bottom part in general prevented me from editing anything despite trying different methods (I even try to draw a new cirle use join then extrude again but it didn't line up idky)  so I sigh and start redo-ing my bottom part now this should be a fairly straightforward process right? Or so one would think apparantly NOTTT so I DO IT ITS IN THE SAME POSITION AS EARLIER AND YET
+The issue was my whole create project shortcut for the bottom ++ how I made the bottom part in general prevented me from editing anything despite trying different methods (I even try to draw a new cirle use join then extrude again but it didn't line up idky)  so I sigh and start redo-ing my bottom part now this should be a fairly straightforward process right? Or so one would think apparantly NOTTT so I DO IT ITS IN THE SAME POSITION AS EARLIER AND YET 
 
 ![PICO](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7a2b82c9e40376aea21448c1d6bb4721f4da33c7071d6b0c76852e5e9ba1a5f8.png)
 
@@ -330,7 +330,7 @@ Then i added in the speaker holes, exported the files again and I was done, hope
 
 ### 2026-11-04: Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
 
-**8h**
+**0.5h**
 
 Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
 
@@ -348,7 +348,7 @@ Firstly I set up Arduino and set up the raspberry pi pico on it,this took me lik
 ![arduino](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/f8263e19edfe31f9e92aca6ae6c21f2c058feb29e2f4c1438d0f4f682ea86680.png)
 Then I spend 5-10 mins on the beginning of the code where I define the GPIO pins of the components and check alongside the schematic to check that they are right and I have not missed anything. I also configure all of the buttons as an enumeration as that would be neater and way less chaotic ( i have TEN buttons). I then used identifiers for all of them that are related to what function they do? (up,down,left,right,a,b,x,y,select and back) deffo didnt steal button layout from a swit- switchn't i mean, yeee anyw tho did that
 
-![LOG 1](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/80bea3a7ae1b8536aa8a4d58602124095fad80478e0dbbb96b7093191e33c339.png) I then had to connect the buttons to their GPIO pins which I did using an array in Button pins.
+![LOG 1](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/80bea3a7ae1b8536aa8a4d58602124095fad80478e0dbbb96b7093191e33c339.png) I then had to connect the buttons to their GPIO pins which I did using an array in Button pins. 
 
 I tried to have the firmware section be organised cuz its wel- sumn i suck at, so i try more(?).
 After this I set upa function that switches 8 bit to 16 bit as thas what the tft uses I believe and then i was defining colors (my console had a purple color scheme cuz its my fav color), when i noticed this cool feature in my code editor which showed me what color I was inputting and allowed me to selct colors whcih I thought was kinda cool.
@@ -370,10 +370,10 @@ After this I configure backlight and display, then spend some time on functions 
 ![setup display](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5e9fd4fd4cbb1e11a088e858d4a4b20d87df9248ecacf46c7b67ccb10a7f5449.png)
 
 ![battery icon](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/bd5394075084c58246a3e0b61c62a2461d75d0029fb609788c507d37c8484bc0.png)
-Sooo back to hrdware I went, I did the battery first, the configured the Buttons, which after doing the battery (which was slightly complex) the buttons were genuinely such a breather. The battery worked by readig the battery voltage, it uses two 1M resistors to reduce the voltage before it reaches pico, as pico requires 3.3 V, I take 16 of these readings and find their average then convert it to a percentage that the battery drawing can use.
+Sooo back to hrdware I went, I did the battery first, the configured the Buttons, which after doing the battery (which was slightly complex) the buttons were genuinely such a breather. The battery worked by readig the battery voltage, it uses two 1M resistors to reduce the voltage before it reaches pico, as pico requires 3.3 V, I take 16 of these readings and find their average then convert it to a percentage that the battery drawing can use. 
 
-![buttons](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/ee6617ab4fa877d4acea52859a20b7e1f774bf50174ba65f4774e90ecb1b55d9.png)
-The buttons which I found kinda calm and zen to code.
+![buttons](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/ee6617ab4fa877d4acea52859a20b7e1f774bf50174ba65f4774e90ecb1b55d9.png) 
+The buttons which I found kinda calm and zen to code. 
 
 After this I have a mute icon which I go hunting to find (it took me sometime to find one that pixelates well) then added it to my code, like so:
 
@@ -407,8 +407,8 @@ then through snake start i define default snake as it is when it begins length, 
 
 ![NEW HEAD MOVEMENT](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7cfa6ed519eabcac5d80ffc5c41005577e2b1c3b962a4461008c95c4936482f6.png)
 
-The food is placed randomly onto the board on an empty cell the food is a red circle,  the update snake function . The snake update functions updates the actual gameplay. It checs the directional buttons and moves the snake like that. I add conditions so that if the snake is for example going left, it cannot randomly spawn turning rightas that'd look weird WEIRDD i also do it for vertical movement, I also use timing. If its time to move the snake moves, if the snake is outside the grid or collides with itself the game ends.
-The new head position is cgecked and once it is valid the snake moves, if it hasn't eaten old tail erased, if eaten tail no removed, score increases if snake eats and a sound effect plays. I also make the game go faster as levels increase to add a difficulty/progression element to it.
+The food is placed randomly onto the board on an empty cell the food is a red circle,  the update snake function . The snake update functions updates the actual gameplay. It checs the directional buttons and moves the snake like that. I add conditions so that if the snake is for example going left, it cannot randomly spawn turning rightas that'd look weird WEIRDD i also do it for vertical movement, I also use timing. If its time to move the snake moves, if the snake is outside the grid or collides with itself the game ends. 
+The new head position is cgecked and once it is valid the snake moves, if it hasn't eaten old tail erased, if eaten tail no removed, score increases if snake eats and a sound effect plays. I also make the game go faster as levels increase to add a difficulty/progression element to it. 
 
 ![NEW HEAD MOVEMENT](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7cfa6ed519eabcac5d80ffc5c41005577e2b1c3b962a4461008c95c4936482f6.png)
 
@@ -424,9 +424,9 @@ Next was ponggg, the player is paddle on left, comp is on right. I one again sta
 
 After this I make functions to draw the ball and a line in the middle, the ball would be drawn acc it calculated  x,y coordinates, the csore is also drawn.  I add an offset to the comp as having a perfect opponent would be annoying, the comp ai works by detecting whenever the ball has gone beyond 1/3rd of the screen, if it does it moves its y coordinate acc a random offset- otherwise it moves to center of screen.
 
-I then worked on movement. The paddle moves using up and down buttons, while comp paddle moves by itself, using baove mechanism. I added limits so neither can go off screen, if ball goes off screen ,its point.
+I then worked on movement. The paddle moves using up and down buttons, while comp paddle moves by itself, using baove mechanism. I added limits so neither can go off screen, if ball goes off screen ,its point. 
 
-I added collision detection so that if ball hits top or bottom of screen direction is reversed. When it hits a paddle its direction is revrsed too, angle depnds on where ball hits, top goes up bottom goes down else it travels in a relatively straight line. Ball gets faster after scucessive hits.
+I added collision detection so that if ball hits top or bottom of screen direction is reversed. When it hits a paddle its direction is revrsed too, angle depnds on where ball hits, top goes up bottom goes down else it travels in a relatively straight line. Ball gets faster after scucessive hits. 
 
 Scoring was whenever ball leaves the scrren it checks which side then awards points accordingly. 10 points to win- I soon realised that the high score option would serve no purpose then so i make it 10 to win but player can score more butttttt if comp scores after 10 player loses. High score and csore is kept track of.
 
@@ -437,7 +437,7 @@ Scoring was whenever ball leaves the scrren it checks which side then awards poi
 ![comp ai](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b17e803db11209e70851e8bb782003c820cd4893893b861b4b5a9610fdaf2174.png)
 
 ![funny note](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/a13333deba8654d31f15230759c45783c8c2db8a05e776b6fc888bf3333255b1.png)
-I added a funny note in bw
+I added a funny note in bw 
 
 also timer after pong
 
@@ -484,9 +484,10 @@ For tetris I do some research on blocks k welp uhhh im running outta time sooooo
 
 ![tetris research](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/1c8dbbef74b260813a6767beda415107d118a13b57a2db220f313d51280e2293.png)
 
+
 ![end of all that](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/3d3addfa3b7ba5982e486330f9188c15bb864ae47cb4e4cce45ffb1b6c0826cc.png)
 
-RUNNER
+RUNNER 
 
 ![TRYING TO FIND BG](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/bf3c60a5f12ccbda95be144c922cd9edcaec801a3322641008feae416e3ea465.png)
 
