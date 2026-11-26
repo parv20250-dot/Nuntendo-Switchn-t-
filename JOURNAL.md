@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 4 | Tier 2 | 12.33h | 9 |
+| Week 4 | Tier 2 | 11.35h | 9 |
 
 ## Contents
 
@@ -20,7 +20,7 @@
 4. [2026-10-30: Okayyy so after this I started off with the case which I thought would be relatively straightforward, unfortunately I forgot how uhhh I am so wel- Firstly I did some reasearch and decided that since s](#2026-10-30-okayyy-so-after-this-i-started-off-with-the-case-)
 5. [2026-10-31: K soooo slightly less optimistic update I update my BOM which was great I was in budget for once in my life...till I reach wel the screws, the screws uhhh I originally planned to have m2.5 but in the](#2026-10-31-k-soooo-slightly-less-optimistic-update-i-update-)
 6. [2026-11-04: FOR SOME CONTEXT TO THIS JOURNAL THERE WAS AN ISSUE WITH TIME TRACKING SO I HAD TO JOURNAL INSTEAD IT WAS FIXED LATER- I DECIDED TO KEEP THE JOURNAL CUZ ADDITIONAL CONTEXT, EXCUSE ANY TYPOS OR LACK OF](#2026-11-04-for-some-context-to-this-journal-there-was-an-iss)
-7. [2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one](#2026-11-26-okayy-so-this-entry-basically-includes-everything)
+7. [2026-11-26: This is a continuation of the previous entry anyw tho as I was saying, I started with the start game loop (get it?) and started off by restting all of the game variables, like so](#2026-11-26-this-is-a-continuation-of-the-previous-entry-anyw)
 8. [2026-11-26: Okay sooo I basically just worked on my GitHub and got all my files in order and uploaded everything, since this was the best among my projects and the one that took the most effort I TRY MY BEST to m](#2026-11-26-okay-sooo-i-basically-just-worked-on-my-github-an)
 9. [2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one](#2026-11-26-okayy-so-this-entry-basically-includes-everything)
 
@@ -528,46 +528,159 @@ I add a function for crash detection, which checks when the player jumps or slid
 
 now that I had everything I needed game redraw orb handling and crash detection, I go..cont
 
-### 2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one
+### 2026-11-26: This is a continuation of the previous entry anyw tho as I was saying, I started with the start game loop (get it?) and started off by restting all of the game variables, like so
 
-**1h**
+**0.02h**
 
-Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one might initially assume. 
+This is a continuation of the previous entry anyw tho as I was saying, I started with the start game loop (get it?) and started off by restting all of the game variables, like so
 
-![finding icons](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/00161fe3603fcae9891d0d341c3ce05eeed5b59225477c29d911cc30dbed60a2.png)
+![start game](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/fa1c3d65e90f51632238634da87a082a1275a18a3da39541a4b727d34047dd36.png)
+ and then with redraw the first frame is drawn and off we gooooo
+with this I began my final loop, filled with joy at finally being done MANY MANY MNAYYYYY hours of coding in. 
 
-![tetris research](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/1c8dbbef74b260813a6767beda415107d118a13b57a2db220f313d51280e2293.png)
-Did some research on Tetris.
+I started off by adding to the score for every 100ms survived
 
-![finding iconss](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/d94a800aa23f7e8cd072bb8afbce5ef4b934312d42f402f902fad6f828e62e75.png)
+![score speed bg and orb](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/a05a822d7be1b9c36d6e45adf6047da6637bf9e5772bc0894c4bc2b243916d1b.png)
+Background according to points (it changes every 1000 points) and button handling.. Scorlls bg and also runner jump and slides
 
-![checked aalll these for sprites](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/fdb0ed940be4580435d2a2689f4b9eb293bdd638c83fd328e57582689d1492c8.png)
-ALLL the icons I checked (some of them did not work pixelated so it took me a few tries). 
+![jump and fly mechanics](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b927548a289d8f3fc3b0aa389cfcf33f9dd62682e9fb8926e3e3ed720f3695ec.png)
 
-![TRYING TO FIND BG](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/bf3c60a5f12ccbda95be144c922cd9edcaec801a3322641008feae416e3ea465.png)
-I did that for all my backgrounds
+The orb handling, if there is no orb and it is time it spawns with a random action assigned to it, its a gamble player can jump or slide as they reach orb and if they pick right action they get immunity for some time as they fly. 
+
+![orb handling](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/a8c14a38614460bf0becca06716219b4394edef0edd03c14585cafc4310715b2.png)
+
+when they return back down they op for a bit so as to ensure no spawn kills. 
+
+obstacle handling, obstacles and their spawn times are randomly chosen like so
+
+![obstacle finale](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/737e59a519b99cd43a2c5cb0bc4ba3ffc67ba87f1d7f12032fcfe8b4a7e298d9.png)
+
+![move obs](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/fd34795f8e6563f6fdb478c1bf6e07fb1d22df52fcc9891ad17fac6d34846220.png)
+Also moved accoringly (running effect).
+If an obstacle is hit dies and loop ends else game loop continues till false is returned i.e, game ends
+
+![end](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/664e9294bc2856bc44ac7ca0ac87ac7cad47014c7d6effbbee83bdeb39221450.png)
+
+After this I moved onto stuff which I had left as to dos earlier,like
+
+![todo1](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/6b609c8734321de228bd7b91e8d412d077fa7f724e5f130458f11512ab6c6c98.png)
+
+![todo3](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/687f007b7376e0c99812659529d0d87606d18bba135418abae923012d9277372.png)
+
+![to do 4](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/cb83f41ee72eef7f22d18f28192f6e9cc69fa34d3a5d698816d1b3ea8b5231d8.png)
+Added the runner in basically
+went icon hunting, found one and added it in
 
 ![tryna find icon](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5a22c0f76b9461007d744655e3efa732f17a29193140ec95bb4354cce6938d06.png)
-Searching for runner icon (this took me a while)
+ (sadly no purple theme one)
+![to do 5](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b358ce938974a813b035af33f7e4cdb0d1526bd145f44b7abe7d51933e9a2dc1.png)
 
-I the converted them to c++ arrays and added them to my code
+![to do 6](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/15a41cb26bf33e336e4f11dcf91dea038fe6fa0dbf2866c7f738aefc2f598e47.png)
+___________________________________________________________________________________
+NOW ERRORS WEL WTV I REMEMBERED ANYW
 
+![error](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/9641ca05cb4accf018fa9e82b4ac6b366517853333463ba60ef07436e9dd4baf.png)
+supposed to be Screen_Height
 
-While I tried to do most of my debugging on VS Code for convenience and time tracking- I was tired by the end and did around 4-5 errors on Arduino, which is also not included in the time tracked on hackatime. 
+![err 2](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/d0d45ff5fd572556b65e4dc9c25e6d2fd311afdf4005408de701e00406b89449.png)
+supposed to be Button_B and button_Back (I use that in code)
 
-![errors](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/6efa283128f22df8f3bb4834af54af7c0f40940bb4d9901ebe493e0f0def40e5.png)
-One of them (the first) took me a while to fix as I was unsure, I eventually realised that I had to declare it earlier which caused the error, moving that line up a bit fixed it. 
-The other two were just a typo a missing semi colon and a ; instead of : (I switch them up A LOT as it can be seen in my previous journal, they close tg on my keyboard so yeee)
+![error 3](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/26a13849be9050cfc8ad176854aaa4655fb38e05f966b8b06e5f4adef2cd6aa6.png)
+BUTTON_COUNT NOT NO
 
+![error4](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/269cf1672d2de41b071c3bfa4f1cfca2f3ee928fa6a5c45e3ef2caa952f415db.png)
+SEMI COLONS
 
-![errors 65](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/0da88f063a52890f0ba83d71a097c41b6dbaa65687d88d66620ecc6c526763e6.png)
+![error 7](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/f38874f2d4bdcc141c80de3ae28eda59447c6372d056825639cf5984eda310d4.png) SEMI COLON WRONG PLACE
 
-![typo](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/416e475ea0ac85f36d78677551aa7011d4b49639ccde0f63b0d0f8f3d3e4dbc5.png)
-I fixed those to FINALLY AFTER HOURS AND HOURS OF CODING see the light at the end of the tunnel.
+![err6](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/1a0f533ac1fbdeb942bd6f5a0347d7570f59ceb81b1fd014a058bde84f16480c.png)
+: instead of ; (they close tg on keyboard)
+
+![err 8](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/2ea48c1ffdd878184a99428c46d04d9a8c184b22ed62e7c8b44d41073e02798c.png)
+EXTRA SPACE
+
+![error 8](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/9dc830ed8e15b681a5d37fefae1eb0c510a2dd743b64689c28119f1ebdbf2293.png)
+Button_B not b
+
+![error 10](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/10708684314ce76dab45596461c565760b580408c3e103b3988eb87e06efd12e.png)
+
+TYPO
+
+![ERROR 11](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/ee8d29809b20b0ac0672cf2a9009022e13116537ddaec990945db3b3e93c878d.png)
+semicolons
+
+![error 12](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/619cd10c6507b826b9173751868490f084ef092a8ff3cf418a714092c16d099e.png)
+SEMICOLON
+
+![errror 14](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/ac418885926aec9c2d970988d9d14dcbb4d248990c55cec36e689f7a11138c26.png)
+SEMICOLONS
+
+![error 14](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/078f501a1ba41613084a7b39343837a988266a0fcceab4900fd724569b8f549e.png)
+SEMICOLON
+
+![Annotation 2026-11-25 233910](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/99c50404d001a80d797d00e88af37bc60d5539caa897f8d7094102d9fa0321f5.png)
+SEMICOLON
+
+![error 16](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/05f9cd3d8c8541773bcbaa37b4e481bb64705f2ea847e6919e57f6c66431200b.png)
+SEMI COLON AND SNAKECORE INSTEAD OF SCORE
+
+![error 17](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5c80638d596b48bb7402f5c72a274c2358e71062648739d3c2add56706322b1a.png)
+unnecessary space
+
+![errors 18](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/d239cdfb8db585df39fe6c725d25268de91a1c36bc33769ab8924d209d4273e8.png)
+semicolons
+
+![error 18](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/942f4b052ed460ff3957889c94b22e29123a4f63f3e58069d12f8fb4d298ee53.png)
+semicolons
+
+![error 19](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/54cff3f6ad9af7515025be74991ef9cb146c5268e4ef44c24b2ce6dd5eb11f2e.png)
+: instead of;
+
+![error 20](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/d6f24dcd9cb0a898b84f646a45fbb70e296023762d2378738fc198e99e9f8816.png)
+semi colon
+
+![error 21](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/2608ab5379b2e6bb730565b3c55a62f5549b31757c2e943eb2befc1ae984940e.png)
+= instead of <
+
+![error 22](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/74fbbbcb764e043448a574c878311a740edd93b4b61150ae37096c5c24381e42.png)
+
+semicolon
+
+![error23](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/fa9120037418d696c228a2c07f2533b975249689042ba09d3106cc0167a1e61e.png)
+
+space
+
+![error 22](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/74fbbbcb764e043448a574c878311a740edd93b4b61150ae37096c5c24381e42.png)
+
+semi colon
+
+![error 23](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/a519d834965c52173396f6e73fe6b7f828c8688936f9d858249e28e8e0351761.png)
+
+wrong variable name
+
+![errors 24](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/72a32da9be1bd2f66a56f5993d5622f9f9afdb20057186ce30e350e3ab44a826.png)
+
+semicolons
+
+![error 24](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/ee8f0239e2ae49ab716dc97e4086a97a572d066dad957420775318ed6a4a3bcc.png)
+
+space
+
+![error28](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/431f91431d3f71e93af8963b480181c218d65dfff3af8bc3678be16645bb3c95.png)
+
+upper vs lower case
+
+![another error](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5e722dfa8304acc375ccba3a3e49d7f901795e0ada11e1e65a67f8a6ad913467.png)
+
+typo
+
+and many many more (a notable one being that GAMESSS AND GAMES were used interchangeably which was bad)
+
+YE I NEED TO WORK ON MY FORMATTING AND CODING, I make rookie mistakes ikik.
+
 ![final compile](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/54c04ab1dbf40094dbdd5e4022c1fe7ed330bbc59339de947ef56ea68b396ae4.png)
-
-and that's ittt, (hopefully) lets see.
-ADIOSSSS
+and i was done SEVERAL HOURS in.
+yay, peace out
 
 ### 2026-11-26: Okay sooo I basically just worked on my GitHub and got all my files in order and uploaded everything, since this was the best among my projects and the one that took the most effort I TRY MY BEST to m
 
