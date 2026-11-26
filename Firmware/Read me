@@ -1,4 +1,11 @@
-This firmware has been written in VS CODE nad compiled in arduino it uses C++
-##TO DO update firmware
-I realised mid project it was too long, so the runner a seperate file
-NOTE THIS FIRMWARE NEEDS WORK,LOTS OF IT
+This firmware has been written in VS CODE and  compiled in arduino it uses C++
+
+The first file sontains all of the console settings and functions (menu, soundtrack, sound effects, button input handling, etc).
+It also contains:-
+>Snake
+>Tetris
+>Pong
+
+I realised mid project it was too long, so the runner was made into a seperate file
+NOTE:- while it compiled sucessfuly, which suggested no major errors, the games have not been tested by me or played by me yet.
+The programme has not been tested on the actual hardware. 
