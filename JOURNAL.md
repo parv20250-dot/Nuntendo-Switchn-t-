@@ -19,7 +19,7 @@
 3. [2026-10-28: Okayyy, soo I tried to do the PCB all right,tried.....I questioned every life decision I have ever made which led me to this point in life while doing so. I am pretty sure I've now lost atleast 10 bra](#2026-10-28-okayyy-soo-i-tried-to-do-the-pcb-all-righttriedi-)
 4. [2026-10-30: Okayyy so after this I started off with the case which I thought would be relatively straightforward, unfortunately I forgot how uhhh I am so wel- Firstly I did some reasearch and decided that since s](#2026-10-30-okayyy-so-after-this-i-started-off-with-the-case-)
 5. [2026-10-31: K soooo slightly less optimistic update I update my BOM which was great I was in budget for once in my life...till I reach wel the screws, the screws uhhh I originally planned to have m2.5 but in the](#2026-10-31-k-soooo-slightly-less-optimistic-update-i-update-)
-6. [2026-11-04: Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.](#2026-11-04-okayyy-so-i-did-my-firmware-which-i-tracked-on-ha)
+6. [2026-11-04: FOR SOME CONTEXT TO THIS JOURNAL THERE WAS AN ISSUE WITH TIME TRACKING SO I HAD TO JOURNAL INSTEAD IT WAS FIXED LATER- I DECIDED TO KEEP THE JOURNAL CUZ ADDITIONAL CONTEXT, EXCUSE ANY TYPOS OR LACK OF](#2026-11-04-for-some-context-to-this-journal-there-was-an-iss)
 7. [2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one](#2026-11-26-okayy-so-this-entry-basically-includes-everything)
 8. [2026-11-26: Okay sooo I basically just worked on my GitHub and got all my files in order and uploaded everything, since this was the best among my projects and the one that took the most effort I TRY MY BEST to m](#2026-11-26-okay-sooo-i-basically-just-worked-on-my-github-an)
 
@@ -330,19 +330,11 @@ Then i added in the speaker holes, exported the files again and I was done, hope
 
 [Timelapse](https://lookout.hackclub.com/api/media/3c731fef-caeb-4e88-9807-0bfc80354e2a/video.mp4)
 
-### 2026-11-04: Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
+### 2026-11-04: FOR SOME CONTEXT TO THIS JOURNAL THERE WAS AN ISSUE WITH TIME TRACKING SO I HAD TO JOURNAL INSTEAD IT WAS FIXED LATER- I DECIDED TO KEEP THE JOURNAL CUZ ADDITIONAL CONTEXT, EXCUSE ANY TYPOS OR LACK OF
 
 **0.02h**
 
-Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
-
-![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/a1fa9bc7b9357ec38b001d5bf5fc52b5349520068a9aa27b45cf6e915ca8e0de.png)
-
-![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/32098847b7cdcb0f5be6b234814801ddf61a677ef5552b0e973e4be49485fa61.png)
-
-![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/14affab53fbae1558c1ade677c2e20fa9f855be5a1baf414d4e859eb546df00f.png)
-
-I'm not sure why this happened, so the hours logged above are the hours that did not get counted ( ;(( PLEASEEEEE I'M NEAR TEARS RN I SPEND SO LONG ON THIS)
+FOR SOME CONTEXT TO THIS JOURNAL THERE WAS AN ISSUE WITH TIME TRACKING SO I HAD TO JOURNAL INSTEAD IT WAS FIXED LATER- I DECIDED TO KEEP THE JOURNAL CUZ ADDITIONAL CONTEXT, EXCUSE ANY TYPOS OR LACK OF DEETS, THIS IS COMPLETELY BACKED BY HACKATIME.
 
 I'll explain my firmware in detail if that helps with the review process, cuz luckily I had taken screenshots of most of my work
 Firstly I set up Arduino and set up the raspberry pi pico on it,this took me like 5-10 mins of work
@@ -444,7 +436,7 @@ I added a funny note in bw
 also timer after pong
 
 ![AFTER PONG](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/bcc51782f6b6314defb92eca3810315274cf0dd9cf9bef6d1ad8cf3271e7479c.png)
-For tetris I do some research on blocks k welp uhhh im running outta time sooooo I did tertis, left runner as to do then moved onto buttons and the game loop and then finally I did  runner which I rushed..... lots ill tweak in build week i swearrrr
+For tetris I do some research on blocks k welp uhhh im running outta time sooooo I did tertis, left runner as to do then moved onto buttons and the game loop and then finally I did  runner which I rushed..... lots, EDIT:- THIS HAS SINCE BEEN FIXED 
 
 ![END OF PONG](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/0a64d5216f94bd049ceed9be763557bccfc5911a7d2d2d02081fdc8d9497461f.png)
 
@@ -495,6 +487,45 @@ RUNNER
 ![varablesss....lots of em](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/0d96abd8c0590b267a83f9b2e03416978fad1935fd53a9e88144f887f6190ffe.png)
 
 ![images](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/581ab63ce4723cb0aad80e8402a67d302fa44301a7536213445d7e1ba99b0d53.png)
+
+okayy so now onto the runner and finally some errors (note- I encountered many errors the images below are solely whenever I remembered to capture screenshots). I decided to make the runner a seperate header file after realsing simly how long my code was getting).
+
+![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/5482f03331c01114ef43635456ee5a9b9c02e5a8fc6f5fe7947157ed1b7504a6.png)
+
+I found the sprites and then converted them into C++ arrays, I do the same for the backgrounds.
+
+I started off by storing all the player sprites that I would be using after defining the player sprites defining all of the variables that I might use (I add stuff and move these around later on, as I code). 
+
+![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/7d08e7d126e24f315eaebaeee4a40529cc9785a20fdd9fd7e4822d788afc4586.png)
+
+I specify colors for each of the backgrounds,like so
+
+![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/66b01de35620afce19066e649c459a5b80adce6758498234c6c5a8a4897487ad.png)
+
+Add obstacles related to themes, this was a hassle to try do
+
+![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/05a91ed438aac10981af0283082ba4033be125f891e01298c539f29fce705f44.png)
+
+![image](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/f010a4ce7028dcabb4cb7784da1dacb525c3096f74fd947c2bbbe7ebeef3659c.png)
+Same for slide, I then have functions to draw the obstacle,orb and player, like so
+
+![draw sprite](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/422dee06135bd7ab5ef8a49be62994d2f17152e1d4f7714dff5b7765a39a0d5e.png)
+
+For the orb I have it be a dark purple outline, a light filling inside and a white smol circle on top corner, to create a shiny effect.
+
+I then have a function to display game information, such as high score and which bg the player currently is in 
+
+![runnr header](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/031325d7f51b294866910c3fb8e2a5b9f2131f9c1233f4ac0bc3cc83e6d397c2.png)
+
+I finally had everything I needed for the redraw function which draws whole frame of game (orb, runner, obtacle and header).
+
+![draw to scr](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/0ffd7c2a48f108a9e0787b67cfffcb35f5d41dd43ef1fc68373f45096cbdf8ea.png)
+
+I add a function for crash detection, which checks when the player jumps or slides when near and object and if they do so. 
+
+![crash](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b7a471f70c41373afc5004d4311762faa2abf7a4b8176cb07d46a0c48eac6086.png)
+
+now that I had everything I needed game redraw orb handling and crash detection, I go on to have my
 
 ### 2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one
 
