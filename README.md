@@ -23,7 +23,7 @@ I used a ground fill for all the ground connections
 
 ## Firmare
 I coded the games myself in Arduino C++
-### GAME
+### GAMES
 
 ## CONTROLS
 
