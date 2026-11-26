@@ -12,6 +12,25 @@ Watch as I try to build a functional handheld gaming console on a budget and hop
 
 This is what the 3d case looks like. It will also have a display (the case has a little display holder area so as to support the display and hold it in place, it will then be connected to the PCB through wires). This is present in
 
+## HARDWARE
+The microprocessor I chose for this device is a **raspberry pico**, I chose this because of the number of pins that were available,since I wanted to have 10 buttons so as to truly capture the look of a switch. It uses an **ST7789 TFT display**, which allows for more colorful images to be displayed. A **LiPo battery** so as to store energy and ensure that it does not have to always stay connected to a computer, **10 push buttons** to allow for interaction with the device, a **DF player** which reads the music stored in a **micro SD card** and plays it through a speaker (this allows for soundtracks as otherwise it would take too much storage and not allow for individual soundtracks).It also has a passive buzzer for in game sound effects and protective components.  
+
+### Materials Required
+List of Required Parts:-
+1. Raspberry Pi Pico 
+2. ST7789 TFT display
+3. LiPo battery
+4. 10 push buttons
+5. DFPlayer Mini 
+6. Micro SD card 
+7. Small speaker 
+8. Passive buzzer 
+9. Protective components (eg:- resistors, details in BOM)
+10. Connecting wires 
+11. Breadboard or custom PCB (refer PCB and schematic folder for PCB details)
+12. Sliding switch
+13. Battery charging module 
+
 ## PCB
 It also uses a pcb, that is the one that is shown below
 
@@ -32,13 +51,16 @@ I coded the games myself in Arduino C++. The basic idea is that each game has a 
 
 ### GAMES
 The console has four games as of now:-
->Snake
->Tetris
->Pong
->Runner
+> Snake
+> Tetris
+> Pong
+> Runner
 These games all have their respective icons which are displayed on the menu screen.
 
+
 <img width="604" height="293" alt="image" src="https://github.com/user-attachments/assets/86713083-0694-4d05-9aa0-33d21c39f250" />
+
+
 Some of the icons that are used as well as other images. 
 
 ## CONTROLS
@@ -51,7 +73,9 @@ Some of the icons that are used as well as other images.
 | **Game over** | A: play again / Back: menu                               |
 | **Settings**  | Up/Down: pick / Left/Right: change / Back: save and exit |
 
-This was created as a hack club project for halflife
+## CREDITS
+This was created as a hack club project for halflife, the code has been written by me.
+All the images present in my firmware have been taken from different sources online. 
 
 
 
