@@ -9,8 +9,10 @@ Watch as I try to build a functional handheld gaming console on a budget and hop
 
 ## CASE
 <img width="416" height="280" alt="changed material" src="https://github.com/user-attachments/assets/3c1a2a9b-06ab-438f-ae22-0bc7862954d4" />
+
 This is what the 3d case looks like. It will also have a display (the case has a little display holder area so as to support the display and hold it in place, it will then be connected to the PCB through wires).
 
+## PCB
 It also uses a pcb, that is the one that is shown below
 
 
