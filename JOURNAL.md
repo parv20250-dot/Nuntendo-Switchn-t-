@@ -525,7 +525,7 @@ I add a function for crash detection, which checks when the player jumps or slid
 
 ![crash](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/b7a471f70c41373afc5004d4311762faa2abf7a4b8176cb07d46a0c48eac6086.png)
 
-now that I had everything I needed game redraw orb handling and crash detection, I go on to have my
+now that I had everything I needed game redraw orb handling and crash detection, I go..cont
 
 ### 2026-11-26: Okayy so this entry basically includes everything that was NOT tracked by hackatime, I found images and icons and also sprites and saved them and converted them into arrays which took longer than one
 
