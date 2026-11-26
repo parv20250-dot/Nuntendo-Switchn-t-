@@ -485,7 +485,6 @@ For tetris I do some research on blocks k welp uhhh im running outta time sooooo
 
 ![tetris research](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/1c8dbbef74b260813a6767beda415107d118a13b57a2db220f313d51280e2293.png)
 
-
 ![end of all that](https://halflife.hackclub-assets.com/sessions/SqenJcVsbXusO3XTlgv7F9V5hj45uC1s/3d3addfa3b7ba5982e486330f9188c15bb864ae47cb4e4cce45ffb1b6c0826cc.png)
 
 RUNNER 
