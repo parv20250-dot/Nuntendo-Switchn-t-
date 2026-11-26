@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 4 | Tier 2 | 10.31h | 6 |
+| Week 4 | Tier 2 | 9.83h | 6 |
 
 ## Contents
 
@@ -330,7 +330,7 @@ Then i added in the speaker holes, exported the files again and I was done, hope
 
 ### 2026-11-04: Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
 
-**0.5h**
+**0.02h**
 
 Okayyy so I did my firmware which I tracked on hackatime I'm not sure why when I try to upload it to hackatime it changes hours, so i will journal just in case.
 
